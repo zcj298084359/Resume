@@ -1,0 +1,56 @@
+/* 清除内外边距 */
+
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,fieldset,lengend,button,input,textarea,th,td {
+	margin: 0;
+	padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-size: 100%;
+}
+
+small {
+	font-size: 12px;
+}
+
+/* 小于 12px 的中文很难阅读，让 small 正常化 */
+
+
+/* 重置列表元素 */
+
+ul,ol {
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+/* for ie6 */
+
+img {
+	border: none;
+}
+
+button,input,select,textarea {
+	font-size: 100%;
+	/* 使得表单元素在 ie 下能继承字体大小 */
+}
+
+/* 重置表格元素 */
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 重置 hr */
+
+hr {
+	border: none;
+	height: 1px;
+}
+
+.clearfixbox{clear: both;display: block;height: 0;font-size: 0;}
+.clearfix:after { content: " "; display: block; clear: both;}
+
